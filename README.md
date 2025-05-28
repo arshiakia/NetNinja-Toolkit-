@@ -22,8 +22,7 @@ Whether you need a quick fix or a one-click maintenance routine, NetNinja has yo
 
 # نحوه شروع کار
 
-«NetNinja Toolkit» مثل یک مرکز فرماندهی مخفی و همه‌کاره برای تنظیمات شبکه ویندوز عمل می‌کند. این ابزار هوشمند توانایی دارد:
-
+NetNinja Toolkit مرکز فرماندهی همه‌کاره برای تنظیمات شبکه ویندوز  . این ابزار توانایی های زیادی دارد
 پاک‌سازی تنظیمات DNS و بازگرداندن به DHCP تنها با یک دستور
 
 فعال یا غیرفعال کردن پروکسی بدون نیاز به جست‌وجو در تنظیمات پیچیده
@@ -40,7 +39,7 @@ Whether you need a quick fix or a one-click maintenance routine, NetNinja has yo
 
 مدیریت مرورگرها: آپدیت از طریق Winget یا پاک کردن کش برای Chrome، Edge و Firefox
 
-NetNinja Toolkit با خودکارسازی تنظیمات پیچیده شبکه، کار شما را با چند کلید ساده راه می‌اندازد. برای اجرا دو راه دارید:
+برای اجرا دو راه دارید:
 
 فایل EXE مستقل: با PyInstaller کامپایل کنید تا فقط با دوبار کلیک اجرا شود.
 
