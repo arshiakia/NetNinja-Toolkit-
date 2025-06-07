@@ -1,26 +1,5 @@
-````markdown
 # Windows Admin Utility Script
 
-A Python-based command-line utility for performing common network and system maintenance tasks on Windows. This script offers two main menus—**Internet** and **Program**—and executes various actions under elevated (Administrator) privileges. It’s designed to simplify tasks such as resetting DNS, clearing cache, installing/updating/removing applications via `winget`, and more.
-
----
-
-## Table of Contents
-
-- [Features](#features)  
-- [Prerequisites](#prerequisites)  
-- [Installation & Setup](#installation--setup)  
-- [Usage](#usage)  
-  - [Launching with Administrator Privileges](#launching-with-administrator-privileges)  
-  - [Main Menu Overview](#main-menu-overview)  
-  - [Internet Menu](#internet-menu)  
-  - [Program Menu](#program-menu)  
-- [Supported Applications (Program Menu)](#supported-applications-program-menu)  
-- [Error Handling & Execution Policy](#error-handling--execution-policy)  
-- [Contributing](#contributing)  
-- [License](#license)
-
----
 
 ## Features
 
