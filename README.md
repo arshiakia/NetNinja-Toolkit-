@@ -17,7 +17,7 @@
    - Update installed applications using `winget upgrade`.  
    - Clear cache directories for selected programs.  
    - Uninstall applications via `winget uninstall`.  
-   - Supports a broad list of software—see [Supported Applications](#supported-applications-program-menu).
+   - Supports a broad list of software—see [Supported Applications](#[supported-applications-program-menu](https://learn.microsoft.com/en-us/windows/package-manager/winget/list)).
 
 ---
 
