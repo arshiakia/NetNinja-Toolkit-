@@ -56,7 +56,7 @@ winget --version
 ## Usage
 
 ### Launching with Administrator Privileges
-Usage Options
+
 This tool offers two ways to use it:
 
 1_ EXE Installer: A convenient and hassle-free executable file. Just run it—no setup or Python needed.
@@ -114,6 +114,9 @@ Enter your choice:
 
 ---
 
+
+
+
 ### Program Menu
 
 ```
@@ -125,8 +128,85 @@ Enter your choice:
 Enter your choice:
 ```
 
-1. Install Program: Install new software from the available list.
-2. Update Program: Update existing installed programs to the latest version.
-3. Clear Program Cache: Remove temporary files and cache of a selected program.
-4. Uninstall Program: Completely remove a program from your system.
+1. **Install Program: Install new software from the available list**
+2. **Update Program: Update existing installed programs to the latest version**
+3. **Clear Program Cache: Remove temporary files and cache of a selected program**
+4. **Uninstall Program: Completely remove a program from your system**
+
+
+حتماً! در ادامه، لیست برنامه‌های پشتیبانی‌شده با شماره‌گذاری و دسته‌بندی:
+
+---
+
+### 🧭 Browsers
+
+1. Google Chrome
+2. Mozilla Firefox
+3. Microsoft Edge
+4. Brave
+5. Opera
+
+---
+
+### 💻 Programming & Development Tools
+
+6. Visual Studio Code
+7. Python
+8. Git
+9. Node.js
+10. Java JDK
+11. Android Studio
+12. IntelliJ IDEA
+13. PyCharm
+14. Eclipse IDE
+15. Docker Desktop
+16. Postman
+
+---
+
+### 🧰 Utilities
+
+17. Notepad++
+18. 7-Zip
+19. WinRAR
+20. FileZilla
+21. Adobe Acrobat Reader
+22. Paint.NET
+
+---
+
+### 📊 Databases
+
+23. MySQL
+24. MongoDB Compass
+
+---
+
+### 🎨 Design & Multimedia
+
+25. Blender
+26. GIMP
+27. Krita
+28. Audacity
+29. Figma
+30. OBS Studio
+
+---
+
+### 📞 Communication & Productivity
+
+31. Microsoft Teams
+32. Skype
+33. Zoom
+34. Telegram Desktop
+35. WhatsApp
+36. Discord
+
+---
+
+### 🎮 Gaming
+
+37. Steam
+
+---
 
