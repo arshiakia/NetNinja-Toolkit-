@@ -3,29 +3,21 @@
 
 ## Features
 
-1. **Administrator Elevation**  
-   - Automatically requests UAC elevation if run without Administrator privileges.  
-2. **Internet Menu**  
+1. **Internet Menu**  
    - Reset all DNS adapters to DHCP.  
    - Clear system proxy settings.  
    - Release/renew IP address and flush DNS cache.  
    - Disable Windows Firewall for all profiles.  
    - Reset the `hosts` file to default.  
-   - Clear browser cache (Chrome, Firefox, Edge, Brave, Opera) after selecting the desired browser.  
-   - “Perform All” option to run all internet-related tasks sequentially, then prompt for a reboot.  
-3. **Program Menu**  
+   - Clear browser cache (Chrome, Firefox, Edge, Brave, Opera) .  
+   - “Perform All” option to run all internet-related tasks sequentially .
+  
+2. **Program Menu**  
    - Install popular applications via `winget` (browsers, programming tools, essential utilities).  
    - Update installed applications using `winget upgrade`.  
    - Clear cache directories for selected programs.  
    - Uninstall applications via `winget uninstall`.  
-   - Supports a broad list of software—see [Supported Applications](#supported-applications-program-menu).  
-4. **User-Friendly Console Interface**  
-   - Clear screen between menus and operations for readability.  
-   - Simple numbered prompts with “Back” options to navigate.  
-   - ASCII banner (`arshiakia`) displayed at startup.  
-5. **Automated User Paths**  
-   - Detects the current Windows user automatically (via `os.environ["USERPROFILE"]`).  
-   - Builds cache paths, profile paths, and hosts file location dynamically—no manual editing required.
+   - Supports a broad list of software—see [Supported Applications](#supported-applications-program-menu).
 
 ---
 
@@ -48,31 +40,31 @@
 ## Installation & Setup
 
 1. **Clone or Download Repository**  
-   ```bash
+```
    git clone https://github.com/<YourUsername>/windows-admin-utility.git
    cd windows-admin-utility
 ````
 
 2. **Verify Python Installation**
 
-   ```powershell
-   python --version
-   ```
+```
+python --version
+```
 
 3. **Ensure Winget is Installed** (optional, for Program menu)
 
-   ```powershell
+```
    winget --version
-   ```
+```
 
    * If not installed, download the App Installer from the Microsoft Store or install via [winget GitHub releases](https://github.com/microsoft/winget-cli).
 
 4. **(Optional) Unblock Script Execution**
    If your system’s PowerShell execution policy blocks running scripts, you can unblock this file:
 
-   ```powershell
+```powershell
    Unblock-File .\admin_utility.py
-   ```
+```
 
    > **Note:** The script bypasses execution policy when using PowerShell commands internally, so you should not encounter execution policy errors during DNS operations.
 
@@ -86,9 +78,9 @@
 2. Navigate to the directory containing `admin_utility.py`.
 3. Run:
 
-   ```powershell
+```
    python admin_utility.py
-   ```
+```
 
    * If you run it without administrative rights, the script will prompt for elevation and relaunch itself with UAC.
 
@@ -110,9 +102,9 @@ Upon successful elevation, you will see a banner and the main menu:
 Enter your choice:
 ```
 
-* **1. Internet** → Opens the Internet Menu.
-* **2. Program** → Opens the Program Menu.
-* **3. Exit** → Terminates the script.
+* 1. Internet** → Opens the Internet Menu.
+* 2. Program** → Opens the Program Menu.
+* 3. Exit** → Terminates the script.
 
 Navigate by entering the corresponding number and pressing **Enter**.
 
