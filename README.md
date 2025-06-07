@@ -38,7 +38,7 @@
 git clone https://github.com/arshiakia/NetNinja-Toolkit-.git
 ```
 ```
-cd windows-admin-utility
+cd C:\Users\----\NetNinja-Toolkit-
 ```
 
 2. **Verify Python Installation**
@@ -56,14 +56,13 @@ winget --version
 ## Usage
 
 ### Launching with Administrator Privileges
+Choose the description style you prefer:
 
-1. Open **Command Prompt** or **PowerShell** *as Administrator*.
-2. Navigate to the directory containing `NetNinja-Toolkit.py`.
-3. Run:
+Simple:
+You can run the Python script or use the standalone EXE file. Just double-click the EXE—no need for Python installation. Both versions have the same features.
 
-```
-NetNinja-Toolkit.py
-```
+Detailed & Engaging:
+For your convenience, this tool is also available as a standalone EXE application. No need to install Python or any dependencies—just download, double-click, and you’re ready to go! The EXE version offers the full functionality of the Python script wrapped in an easy-to-use executable, perfect for users who want a hassle-free setup.
 ---
 
 ### Main Menu Overview
@@ -106,72 +105,13 @@ Enter your choice:
 ```
 
 1. **Delete all DNS settings**
-
-   * Resets DNS server to DHCP for every active network adapter. Internally runs PowerShell with `-NoProfile -ExecutionPolicy Bypass`.
-   * Example PowerShell command:
-
-     ```powershell
-     Get-NetAdapter | Where-Object {$_.Status -eq 'Up'} |
-       ForEach-Object { Set-DnsClientServerAddress -InterfaceIndex $_.InterfaceIndex -ResetServerAddresses }
-     ```
-
 2. **Delete proxy settings**
-
-   * Runs `netsh winhttp reset proxy` and removes `ProxyEnable`/`ProxyServer` registry values under `HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings`.
-
 3. **Flush IP (release, renew, flushdns)**
-
-   * `ipconfig /release` → `ipconfig /renew` → `ipconfig /flushdns`.
-   * Pauses 2 seconds between each command for stability.
-
 4. **Disable Windows Firewall**
-
-   * Runs `netsh advfirewall set allprofiles state off`.
-
 5. **Clear hosts file**
-
-   * Overwrites `%WINDIR%\System32\drivers\etc\hosts` with default loopback entries:
-
-     ```
-     127.0.0.1    localhost
-     ::1          localhost
-     ```
-
 6. **Perform all of the above**
-
-   * Executes (1) through (5) in sequence.
-   * After completion, prompts:
-
-     ```
-     Do you want to reboot now? (y/n):
-     ```
-
-     * `y` → `shutdown /r /t 0` (immediate reboot).
-     * `n` → Return to Internet Menu.
-
 7. **Clear browser cache**
-
-   * Displays:
-
-     ```
-     1. Google Chrome
-     2. Mozilla Firefox
-     3. Microsoft Edge
-     4. Brave
-     5. Opera
-     6. Back to Internet Menu
-     ```
-   * Automatically detects `%USERPROFILE%` and deletes the chosen browser’s cache folder:
-
-     * Chrome: `%LOCALAPPDATA%\Google\Chrome\User Data\Default\Cache`
-     * Firefox: `%LOCALAPPDATA%\Mozilla\Firefox\Profiles\<Profile>\cache2` (clears all profile cache2 folders)
-     * Edge: `%LOCALAPPDATA%\Microsoft\Edge\User Data\Default\Cache`
-     * Brave: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default\Cache`
-     * Opera: `%LOCALAPPDATA%\Opera Software\Opera Stable\Cache`
-
 8. **Return to Main Menu**
-
-   * Goes back to the Main Menu screen.
 
 ---
 
@@ -239,19 +179,11 @@ Enter your choice:
      ```
    * After selection, runs:
 
-     ```bash
-     winget install --id <PACKAGE_ID> --silent
-     ```
 
 2. **Update Program**
 
    * Checks if `winget` exists.
    * Displays a combined list of all supported applications (same IDs as above).
-   * After selection, runs:
-
-     ```bash
-     winget upgrade --id <PACKAGE_ID> --silent
-     ```
 
 3. **Clear Program Cache**
 
@@ -274,21 +206,10 @@ Enter your choice:
      14. Discord      → (No standard path; skipped)
      15. Back
      ```
+     
    * If a valid cache folder exists, it will be deleted. Otherwise, a warning is shown.
 
 4. **Uninstall Program**
-
-   * Checks if `winget` exists.
-   * Displays the same list as in “Update Program.”
-   * After confirming, runs:
-
-     ```bash
-     winget uninstall --id <PACKAGE_ID> --silent
-     ```
-
-5. **Return to Main Menu**
-
-   * Goes back to the Main Menu screen.
 
 ---
 
@@ -328,45 +249,3 @@ Below is a consolidated list of application IDs used by `winget` in this script.
   * `Docker.DockerDesktop` (Docker Desktop)
   * `Postman.Postman` (Postman)
   * `Discord.Discord` (Discord)
-
----
-
-## Error Handling & Execution Policy
-
-* **PowerShell “Scripts Disabled” Error**
-  When resetting DNS, if you see:
-
-  ```
-  File C:\Users\<User>\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 cannot be loaded 
-  because running scripts is disabled on this system.
-  ```
-
-  The script is already configured to call PowerShell with `-NoProfile -ExecutionPolicy Bypass`, which prevents loading your personal profile and ignores the system’s execution policy. No additional change is usually required.
-
-* **Winget Not Found**
-  If `winget` is not installed or not in `PATH`, install it via the Microsoft Store (App Installer) or download from [GitHub Releases](https://github.com/microsoft/winget-cli/releases). The script will detect its absence and skip “Install,” “Update,” and “Uninstall” operations.
-
----
-
-## Contributing
-
-1. Fork this repository on GitHub.
-2. Create a new branch for your feature or bugfix:
-
-   ```bash
-   git checkout -b feature/my-feature
-   ```
-3. Make your changes and commit them with clear messages.
-4. Push your branch and open a Pull Request.
-5. Ensure your code follows the existing style and thoroughly test new additions—especially PowerShell commands or `winget` IDs.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute as you see fit.
-
----
-
-```
-```
