@@ -16,24 +16,18 @@
    - Install popular applications via `winget` (browsers, programming tools, essential utilities).  
    - Update installed applications using `winget upgrade`.  
    - Clear cache directories for selected programs.  
-   - Uninstall applications via `winget uninstall`.  
-   - Supports a broad list of software—see [Supported Applications](#[supported-applications-program-menu](https://learn.microsoft.com/en-us/windows/package-manager/winget/list)).
+   - Uninstall applications via `winget uninstall`.
+   - Supports a broad list of software—see [Supported Applications (Program Menu)](https://learn.microsoft.com/en-us/windows/package-manager/winget/list)
 
 ---
 
 ## Prerequisites
 
-- **Operating System**: Windows 10 or later (Windows 11 tested).  
-- **Python Version**:  
-  - Python 3.6+ installed and available in `PATH`.  
-  - Ensure the `python` command is recognized in PowerShell/Command Prompt.
-
-- **Dependencies**: No external Python packages are required.  
-  All functionality is implemented using standard library modules (`os`, `sys`, `subprocess`, `ctypes`, `shutil`, `time`).
-
-- **Winget**:  
-  - Windows Package Manager (`winget`) must be installed and accessible in `PATH` for Program Menu actions.  
-  - If `winget` is unavailable, the script will skip “Install,” “Update,” and “Uninstall” actions with a warning message.
+   - Windows 10 or later
+   - Python 3.6+ installed and added to your system’s PATH
+   - Winget (Windows Package Manager) installed for installing/updating/uninstalling programs
+   - No extra Python packages needed — everything uses the standard library
+   - Run the script as Administrator for full functionality
 
 ---
 
@@ -41,9 +35,11 @@
 
 1. **Clone or Download Repository**  
 ```
-   git clone https://github.com/<YourUsername>/windows-admin-utility.git
-   cd windows-admin-utility
-````
+git clone https://github.com/arshiakia/NetNinja-Toolkit-.git
+```
+```
+cd windows-admin-utility
+```
 
 2. **Verify Python Installation**
 
@@ -54,36 +50,20 @@ python --version
 3. **Ensure Winget is Installed** (optional, for Program menu)
 
 ```
-   winget --version
+winget --version
 ```
-
-   * If not installed, download the App Installer from the Microsoft Store or install via [winget GitHub releases](https://github.com/microsoft/winget-cli).
-
-4. **(Optional) Unblock Script Execution**
-   If your system’s PowerShell execution policy blocks running scripts, you can unblock this file:
-
-```powershell
-   Unblock-File .\admin_utility.py
-```
-
-   > **Note:** The script bypasses execution policy when using PowerShell commands internally, so you should not encounter execution policy errors during DNS operations.
-
----
 
 ## Usage
 
 ### Launching with Administrator Privileges
 
 1. Open **Command Prompt** or **PowerShell** *as Administrator*.
-2. Navigate to the directory containing `admin_utility.py`.
+2. Navigate to the directory containing `NetNinja-Toolkit.py`.
 3. Run:
 
 ```
-   python admin_utility.py
+NetNinja-Toolkit.py
 ```
-
-   * If you run it without administrative rights, the script will prompt for elevation and relaunch itself with UAC.
-
 ---
 
 ### Main Menu Overview
