@@ -62,6 +62,7 @@ This tool offers two ways to use it:
 1_ EXE Installer: A convenient and hassle-free executable file. Just run it—no setup or Python needed.
 
 2_ Python Script: For advanced users who prefer flexibility and customization, the full Python script is available.
+
 ---
 
 
@@ -134,7 +135,6 @@ Enter your choice:
 4. **Uninstall Program: Completely remove a program from your system**
 
 
-حتماً! در ادامه، لیست برنامه‌های پشتیبانی‌شده با شماره‌گذاری و دسته‌بندی:
 
 ---
 
@@ -150,63 +150,39 @@ Enter your choice:
 
 ### 💻 Programming & Development Tools
 
-6. Visual Studio Code
-7. Python
-8. Git
-9. Node.js
-10. Java JDK
-11. Android Studio
-12. IntelliJ IDEA
-13. PyCharm
-14. Eclipse IDE
-15. Docker Desktop
-16. Postman
+1. Visual Studio Code
+2. Python
+3. Git
+4. Node.js
+5. Java JDK
+6. Android Studio
+7. IntelliJ IDEA
+8. PyCharm
+9. Eclipse IDE
+10. Docker Desktop
+11. Postman
 
 ---
 
 ### 🧰 Utilities
 
-17. Notepad++
-18. 7-Zip
-19. WinRAR
-20. FileZilla
-21. Adobe Acrobat Reader
-22. Paint.NET
-
----
-
-### 📊 Databases
-
-23. MySQL
-24. MongoDB Compass
-
----
-
-### 🎨 Design & Multimedia
-
-25. Blender
-26. GIMP
-27. Krita
-28. Audacity
-29. Figma
-30. OBS Studio
+1. Notepad++
+2. 7-Zip
+3. WinRAR
+4. FileZilla
+5. Adobe Acrobat Reader
+6. Paint.NET
 
 ---
 
 ### 📞 Communication & Productivity
 
-31. Microsoft Teams
-32. Skype
-33. Zoom
-34. Telegram Desktop
-35. WhatsApp
-36. Discord
+1. Microsoft Teams
+2. Skype
+3. Zoom
+4. Telegram Desktop
+5. WhatsApp
+6. Discord
+7. Steam
 
 ---
-
-### 🎮 Gaming
-
-37. Steam
-
----
-
