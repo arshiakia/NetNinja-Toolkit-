@@ -186,3 +186,8 @@ Enter your choice:
 7. Steam
 
 ---
+
+### 📊 Databases
+
+1. MySQL
+2. MongoDB Compass
