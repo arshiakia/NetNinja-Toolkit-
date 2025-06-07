@@ -1,0 +1,53 @@
+{
+  "Browsers": [
+    "Google Chrome",
+    "Mozilla Firefox",
+    "Microsoft Edge",
+    "Brave",
+    "Opera"
+  ],
+  "Programming & Development Tools": [
+    "Visual Studio Code",
+    "Python",
+    "Git",
+    "Node.js",
+    "Java JDK",
+    "Android Studio",
+    "IntelliJ IDEA",
+    "PyCharm",
+    "Eclipse IDE",
+    "Docker Desktop",
+    "Postman"
+  ],
+  "Utilities": [
+    "Notepad++",
+    "7-Zip",
+    "WinRAR",
+    "FileZilla",
+    "Adobe Acrobat Reader",
+    "Paint.NET"
+  ],
+  "Databases": [
+    "MySQL",
+    "MongoDB Compass"
+  ],
+  "Design & Multimedia": [
+    "Blender",
+    "GIMP",
+    "Krita",
+    "Audacity",
+    "Figma",
+    "OBS Studio"
+  ],
+  "Communication & Productivity": [
+    "Microsoft Teams",
+    "Skype",
+    "Zoom",
+    "Telegram Desktop",
+    "WhatsApp",
+    "Discord"
+  ],
+  "Gaming": [
+    "Steam"
+  ]
+}
